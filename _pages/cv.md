@@ -57,9 +57,8 @@ Recognized for the highest publication performance among pre-Ph.D. academic/rese
 
 **Invited Panel Speaker — Women's Leadership & Technology Vision**  
 34th SIU Conference, 2026  
-Piri Reis University · IEEE Young Professionals Türkiye  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+Piri Reis University · IEEE Young Professionals Türkiye  
+ 
   
 Skills
 ======
