@@ -7,18 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-I am a **Research Assistant and Ph.D. student in Computer Engineering at Istanbul Technical University (ITU)** and a member of the **ANTS Research Group (Ad-hoc Networks & Systems)**.
-
-My research focuses on **wireless communication systems, aerial networks, software-defined radio (SDR), adaptive communication systems, and Integrated Sensing and Communication (ISAC)**.
-
-My current research particularly investigates **multi-static ISAC architectures for low-altitude communication and sensing**, **ISAC-assisted dynamic indoor Wi-Fi coverage**, and **flight-dynamics-aware communication mechanisms for UAVs**. My work combines communication system design with experimental validation using SDR-based wireless testbeds.
+I am a Research Assistant and Ph.D. student in Computer Engineering at Istanbul Technical University (ITU), and a member of the ANTS Research Group (Ad-hoc Networks & Systems).
 
 ## Research Interests
 
-- Integrated Sensing and Communication (ISAC)
-- Aerial and UAV Communications
-- Multi-Static ISAC Networks
-- Software-Defined Radio (SDR)
-- Adaptive Modulation and Coding
-- ISAC-Assisted Wi-Fi
-- Wireless Network Optimization
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.5rem 2rem; margin-top: 1rem;">
+
+<div>Integrated Sensing and Communication (ISAC)</div>
+<div>Aerial and UAV Communications</div>
+<div>Multi-Static ISAC Networks</div>
+<div>Software-Defined Radio (SDR)</div>
+<div>Adaptive Communication Systems</div>
+<div>ISAC-Assisted Wi-Fi</div>
+
+</div>
