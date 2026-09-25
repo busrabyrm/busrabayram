@@ -81,8 +81,8 @@ author:
 
 # Publication Categories
 publication_category:
-  books:
-    title: 'Books'
+  submitted:
+    title: 'Submitted / Under Review'
   manuscripts:
     title: 'Journal Articles'
   conferences:
