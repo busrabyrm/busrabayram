@@ -6,31 +6,85 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p class="wordwrap">
+    A complete list of my publications is also available on
+    <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>.
+  </p>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+
+  {% for category in site.publication_category %}
+    {% assign category_posts = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+
+    {% if category_posts.size > 0 %}
+
+      <h2>{{ category[1].title }}</h2>
+
+      {% for post in category_posts %}
+
+        <article style="margin: 0 0 2.4rem 0;">
+
+          <h3 style="margin: 0 0 0.55rem 0;">
+            <a href="{{ base_path }}{{ post.url }}">
+              {{ post.title }}
+            </a>
+          </h3>
+
+          {% if post.citation %}
+            <p style="margin: 0 0 0.55rem 0; line-height: 1.6;">
+              {{ post.citation }}
+            </p>
+          {% endif %}
+
+          {% if post.paperurl %}
+            <p style="margin: 0; font-size: 0.9em;">
+              <a href="{{ post.paperurl }}" target="_blank" rel="noopener">
+                IEEE Xplore
+              </a>
+            </p>
+          {% endif %}
+
+        </article>
+
+      {% endfor %}
+
+    {% endif %}
+
   {% endfor %}
+
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+
+  {% assign publication_posts = site.publications | sort: "date" | reverse %}
+
+  {% for post in publication_posts %}
+
+    <article style="margin: 0 0 2.4rem 0;">
+
+      <h3 style="margin: 0 0 0.55rem 0;">
+        <a href="{{ base_path }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h3>
+
+      {% if post.citation %}
+        <p style="margin: 0 0 0.55rem 0; line-height: 1.6;">
+          {{ post.citation }}
+        </p>
+      {% endif %}
+
+      {% if post.paperurl %}
+        <p style="margin: 0; font-size: 0.9em;">
+          <a href="{{ post.paperurl }}" target="_blank" rel="noopener">
+            IEEE Xplore
+          </a>
+        </p>
+      {% endif %}
+
+    </article>
+
   {% endfor %}
+
 {% endif %}
-
-
-
