@@ -3,16 +3,14 @@ title: "Semantic Flow Control for Task-Oriented Position Tracking"
 collection: publications
 category: manuscripts
 permalink: /publication/2025-01-01-semantic-flow-control
-date: 2025-01-01
+date: 2025-03-19
 venue: "IEEE Access"
-paperurl: "https://doi.org/10.1109/ACCESS.2025.3552927"
-citation: "T. T. Sarı, B. Bayram, B. S. Kim, and G. Seçinti. (2025). &quot;Semantic Flow Control for Task-Oriented Position Tracking.&quot; <i>IEEE Access</i>."
+paperurl: "https://ieeexplore.ieee.org/abstract/document/10933985/"
+citation: "T. T. Sarı, B. Bayram, B.-S. Kim, and G. Seçinti, &quot;Semantic Flow Control for Task-Oriented Position Tracking,&quot; <i>IEEE Access</i>, vol. 13, pp. 53547–53557, 2025."
 ---
 
-T. T. Sarı, **B. Bayram**, B. S. Kim, and G. Seçinti.
+T. T. Sarı, B. Bayram, B.-S. Kim, and G. Seçinti.
 
-"Semantic Flow Control for Task-Oriented Position Tracking."
+IEEE Access, vol. 13, pp. 53547–53557, 2025.
 
-*IEEE Access*, 2025.
-
-[DOI: 10.1109/ACCESS.2025.3552927](https://doi.org/10.1109/ACCESS.2025.3552927)
+[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10933985/) · [PDF](https://ieeexplore.ieee.org/iel8/6287639/6514899/10933985.pdf)
