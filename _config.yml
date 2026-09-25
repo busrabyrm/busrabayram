@@ -8,7 +8,7 @@ site_theme               : "default"
 title                    : "Büşra BAYRAM"
 title_separator          : "-"
 name                     : &name "Büşra BAYRAM"
-description              : "Research Assistant | Ph.D. Student | Computer Engineer"
+description              : "Büşra Bayram - Research Assistant | Ph.D. Student | Computer Engineer"
 
 url                      : "https://web.itu.edu.tr"
 baseurl                  : "/bayram22"
