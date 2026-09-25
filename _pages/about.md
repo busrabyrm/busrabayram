@@ -7,17 +7,67 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Assistant and Ph.D. student in Computer Engineering at Istanbul Technical University (ITU), and a member of the ANTS Research Group (Ad-hoc Networks & Systems).
+<style>
+  .about-intro {
+    max-width: 760px;
+    font-size: 1.05em;
+    line-height: 1.75;
+    margin-bottom: 2.8rem;
+  }
 
-## Research Interests
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    margin-top: 1.2rem;
+    border-top: 1px solid #e5e5e5;
+  }
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.5rem 2rem; margin-top: 1rem;">
+  .research-item {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 1.4;
+  }
 
-<div>Integrated Sensing and Communication (ISAC)</div>
-<div>Aerial and UAV Communications</div>
-<div>Multi-Static ISAC Networks</div>
-<div>Software-Defined Radio (SDR)</div>
-<div>Adaptive Communication Systems</div>
-<div>ISAC-Assisted Wi-Fi</div>
+  @media (max-width: 600px) {
+    .research-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="about-intro">
+  I am a Research Assistant and Ph.D. student in Computer Engineering at
+  Istanbul Technical University (ITU), and a member of the
+  ANTS Research Group (Ad-hoc Networks & Systems).
+</div>
+
+<h2>Research Interests</h2>
+
+<div class="research-grid">
+
+  <div class="research-item">
+    Integrated Sensing and Communication (ISAC)
+  </div>
+
+  <div class="research-item">
+    Aerial and UAV Communications
+  </div>
+
+  <div class="research-item">
+    Multi-Static ISAC Networks
+  </div>
+
+  <div class="research-item">
+    Software-Defined Radio (SDR)
+  </div>
+
+  <div class="research-item">
+    Adaptive Communication Systems
+  </div>
+
+  <div class="research-item">
+    ISAC-Assisted Wi-Fi
+  </div>
 
 </div>
