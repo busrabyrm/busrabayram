@@ -54,11 +54,13 @@ author_profile: true
   </div>
 
   <div style="margin-bottom: 1.5rem;">
+  <a href="https://www.ieee-camad.org/" target="_blank" rel="noopener">
     IEEE International Workshop on Computer Aided Modeling and Design of Communication Links and Networks (CAMAD)
-    <div style="margin-top: 0.25rem; font-size: 0.9em; color: #666;">
-      Technical Program Committee Member
-    </div>
+  </a>
+  <div style="margin-top: 0.25rem; font-size: 0.9em; color: #666;">
+    Technical Program Committee Member
   </div>
+</div>
 
 </div>
 
