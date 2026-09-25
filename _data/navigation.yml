@@ -2,16 +2,16 @@
 main:
 
   - title: "Publications"
-    url: /bayram22/publications/
+    url: /publications/
 
   - title: "Research"
-    url: /bayram22/research/
+    url: /research/
 
   - title: "Teaching"
-    url: /bayram22/teaching/
+    url: /teaching/
 
   - title: "Academic Service"
-    url: /bayram22/service/
+    url: /service/
 
   - title: "CV"
-    url: /bayram22/cv/
+    url: /cv/
