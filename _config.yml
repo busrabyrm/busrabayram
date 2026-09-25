@@ -5,10 +5,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Büşra BAYRAM"
+title                    : "Büşra Bayram"
 title_separator          : "-"
-name                     : &name "Büşra BAYRAM"
-description              : "Büşra Bayram - Research Assistant | Ph.D. Student | Computer Engineer"
+name                     : &name "Büşra Bayram"
+description              : "Büşra Bayram — Research Assistant and Ph.D. Student in Computer Engineering at Istanbul Technical University"
 
 url                      : "https://web.itu.edu.tr"
 baseurl                  : "/bayram22"
@@ -21,12 +21,12 @@ repository               : "busrabyrm/busrabayram"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Büşra BAYRAM"
+  name             : "Büşra Bayram"
   pronouns         :
   bio              : "Research Assistant | Ph.D. Student | Computer Engineer"
   location         : "Istanbul, Türkiye"
   employer         : "Istanbul Technical University"
-  uri              :
+  uri              : "https://web.itu.edu.tr/bayram22/"
   email            : "bayram22@itu.edu.tr"
 
   # Academic websites
@@ -115,7 +115,7 @@ staticman:
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
-  path                   : "_data/comments/{options.slug}"
+  path                   : "_data/comments/{options.slug}
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
@@ -147,12 +147,15 @@ facebook:
   publisher              :
 
 og_image                 :
-og_description           :
+og_description           : "Büşra Bayram — Research Assistant and Ph.D. Student in Computer Engineering at Istanbul Technical University"
 
 social:
   type                   : Person
-  name                   : "Büşra BAYRAM"
+  name                   : "Büşra Bayram"
   links:
+    - "https://scholar.google.com/citations?user=la2H3tAAAAAJ"
+    - "https://github.com/busrabyrm"
+    - "https://www.linkedin.com/in/busrabyrm/"
 
 
 # Analytics
