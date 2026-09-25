@@ -10,9 +10,8 @@ title_separator          : "-"
 name                     : &name "Büşra BAYRAM"
 description              : "Research Assistant | Ph.D. Student | Computer Engineer"
 
-# Final ITU personal website
-url                      : "https://web.itu.edu.tr/bayram22"
-baseurl                  : ""
+url                      : "https://web.itu.edu.tr"
+baseurl                  : "/bayram22"
 
 # GitHub source repository
 repository               : "busrabyrm/busrabayram"
