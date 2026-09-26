@@ -5,36 +5,277 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+.publications-intro {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2.2rem;
+}
+
+.publications-intro a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Category heading */
+.publication-category {
+  margin-top: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.publication-category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #777;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.65rem;
+}
+
+.publication-count {
+  color: #aaa;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+/* Individual publication */
+.publication-item {
+  padding: 0.4rem 0 1.6rem 0;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.publication-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Title */
+.publication-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 0.55rem 0;
+  color: #333;
+}
+
+/* Citation */
+.publication-citation {
+  color: #666;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0 0 0.8rem 0;
+}
+
+/* Links */
+.publication-links {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.publication-link {
+  display: inline-block;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+
+  color: #555;
+  background: #fafafa;
+
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+
+  padding: 0.28rem 0.55rem;
+
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+}
+
+.publication-link:hover {
+  background: #f0f0f0;
+  border-color: #cccccc;
+  color: #222;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  .publication-title {
+    font-size: 1rem;
+  }
+
+  .publication-citation {
+    font-size: 0.84rem;
+  }
+
+}
+</style>
+
+
 {% if site.author.googlescholar %}
-  <p class="wordwrap">
-    A complete list of my publications is also available on
-    <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>.
-  </p>
+
+<p class="publications-intro">
+  A complete list of my publications is also available on
+  <a href="{{ site.author.googlescholar }}"
+     target="_blank"
+     rel="noopener">
+    Google Scholar ↗
+  </a>.
+</p>
+
 {% endif %}
 
+
 {% include base_path %}
+
 
 {% if site.publication_category %}
 
   {% for category in site.publication_category %}
-    {% assign category_posts = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+
+    {% assign category_posts = site.publications
+       | where: "category", category[0]
+       | sort: "date"
+       | reverse %}
 
     {% if category_posts.size > 0 %}
 
-      <h2>{{ category[1].title }}</h2>
+      <section class="publication-category">
+
+        <div class="publication-category-header">
+
+          <span>
+            {{ category[1].title }}
+          </span>
+
+          <span class="publication-count">
+            {{ category_posts.size }}
+          </span>
+
+        </div>
+
+      </section>
+
 
       {% for post in category_posts %}
 
-        <article style="margin: 0 0 2.4rem 0;">
+        <article class="publication-item">
 
-          <h3 style="margin: 0 0 0.55rem 0;">
-            <a href="{{ base_path }}{{ post.url }}">
-              {{ post.title }}
-            </a>
+          <h3 class="publication-title">
+            {{ post.title }}
           </h3>
 
+
           {% if post.citation %}
-            <p style="margin: 0 0 0.55rem 0; line-height: 1.6;">
+
+            <p class="publication-citation">
+              {{ post.citation }}
+            </p>
+
+          {% endif %}
+
+
+          <div class="publication-links">
+
+            {% if post.paperurl %}
+
+              <a class="publication-link"
+                 href="{{ post.paperurl }}"
+                 target="_blank"
+                 rel="noopener">
+                IEEE Xplore ↗
+              </a>
+
+            {% endif %}
+
+
+            {% if post.pdfurl %}
+
+              <a class="publication-link"
+                 href="{{ post.pdfurl }}"
+                 target="_blank"
+                 rel="noopener">
+                PDF ↓
+              </a>
+
+            {% endif %}
+
+          </div>
+
+        </article>
+
+      {% endfor %}
+
+    {% endif %}
+
+  {% endfor %}
+
+
+{% else %}
+
+
+  {% assign publication_posts = site.publications
+     | sort: "date"
+     | reverse %}
+
+
+  {% for post in publication_posts %}
+
+    <article class="publication-item">
+
+      <h3 class="publication-title">
+        {{ post.title }}
+      </h3>
+
+
+      {% if post.citation %}
+
+        <p class="publication-citation">
+          {{ post.citation }}
+        </p>
+
+      {% endif %}
+
+
+      <div class="publication-links">
+
+        {% if post.paperurl %}
+
+          <a class="publication-link"
+             href="{{ post.paperurl }}"
+             target="_blank"
+             rel="noopener">
+            IEEE Xplore ↗
+          </a>
+
+        {% endif %}
+
+
+        {% if post.pdfurl %}
+
+          <a class="publication-link"
+             href="{{ post.pdfurl }}"
+             target="_blank"
+             rel="noopener">
+            PDF ↓
+          </a>
+
+        {% endif %}
+
+      </div>
+
+    </article>
+
+  {% endfor %}
+
+{% endif %}            <p style="margin: 0 0 0.55rem 0; line-height: 1.6;">
               {{ post.citation }}
             </p>
           {% endif %}
