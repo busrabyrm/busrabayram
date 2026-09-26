@@ -86,10 +86,10 @@ author_profile: true
   font-weight: 600;
   letter-spacing: 0.04em;
 
-  color: #555;
+  color: var(--global-link-color);
   background: #fafafa;
 
-  border: 1px solid #dddddd;
+  border: 1px solid var(--global-link-color);
   border-radius: 4px;
 
   padding: 0.28rem 0.55rem;
@@ -99,9 +99,11 @@ author_profile: true
 }
 
 .publication-link:hover {
-  background: #f0f0f0;
-  border-color: #cccccc;
-  color: #222;
+  color: #ffffff;
+  background: var(--global-link-color);
+  border-color: var(--global-link-color);
+
+  text-decoration: none !important;
 }
 
 /* Mobile */
